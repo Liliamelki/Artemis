@@ -1,0 +1,104 @@
+
+/**
+ * Artemis Design System — Design Tokens
+ *
+ * Centralizes the visual foundations of the application:
+ * colors, typography, spacing, borders and shadows.
+ *
+ * Section-specific accents allow each area of Artemis
+ * to have its own visual identity.
+ */
+
+/* ========================================
+   1. LIGHT THEME — Default
+======================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Base colors */
+  --color-background: #F8F5F0;
+  --color-surface: #FFFEFC;
+  --color-surface-secondary: #F1EDE7;
+
+  /* Text */
+  --color-text: #393640;
+  --color-text-muted: #817C83;
+
+  /* Borders and shadows */
+  --color-border: #E9E3DC;
+  --shadow-card: 0 4px 18px rgba(55, 45, 60, 0.06);
+
+  /* Typography */
+  --font-family: "Inter", "Segoe UI", sans-serif;
+
+  /* Shapes */
+  --radius-card: 18px;
+  --radius-button: 12px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Default accent: Cycle */
+  --color-accent: #A98BC4;
+  --color-accent-soft: #EFE7F5;
+  --color-accent-strong: #80649C;
+}
+
+/* ========================================
+   2. DARK THEME
+======================================== */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-background: #211F26;
+  --color-surface: #2D2A33;
+  --color-surface-secondary: #38343F;
+
+  --color-text: #F5F0F5;
+  --color-text-muted: #B9B0BE;
+
+  --color-border: #49434F;
+  --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.16);
+
+  --color-accent: #C4A8DC;
+  --color-accent-soft: #40354A;
+  --color-accent-strong: #D5BCE9;
+}
+
+/* ========================================
+   3. SECTION ACCENTS
+======================================== */
+
+/* Cycle and calendar */
+[data-section="cycle"] {
+  --color-accent: #A98BC4;
+  --color-accent-soft: #EFE7F5;
+  --color-accent-strong: #80649C;
+}
+
+/* Sports */
+[data-section="sport"] {
+  --color-accent: #C4A83F;
+  --color-accent-soft: #F6EDC9;
+  --color-accent-strong: #85701F;
+}
+
+/* Personal journal */
+[data-section="journal"] {
+  --color-accent: #D99A9A;
+  --color-accent-soft: #F8E8E5;
+  --color-accent-strong: #A96769;
+}
+
+/* Statistics */
+[data-section="statistics"] {
+  --color-accent: #83B9AD;
+  --color-accent-soft: #E0F0EA;
+  --color-accent-strong: #4F897D;
+}

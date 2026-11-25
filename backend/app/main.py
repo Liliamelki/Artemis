@@ -1,4 +1,11 @@
 
+"""
+Artemis API entry point.
+
+Initializes the FastAPI application, configures middleware
+and defines the API endpoints.
+"""
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
